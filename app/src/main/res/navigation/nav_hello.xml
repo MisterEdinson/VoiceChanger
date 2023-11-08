@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_hello"
+    app:startDestination="@id/helloOneFragment2">
+
+    <fragment
+        android:id="@+id/helloOneFragment2"
+        android:name="com.example.voicechanger.ui.hello.HelloOneFragment"
+        android:label="fragment_hello_one"
+        tools:layout="@layout/fragment_hello_one" >
+        <action
+            android:id="@+id/action_helloOneFragment2_to_helloTwoFragment2"
+            app:destination="@id/helloTwoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloTwoFragment2"
+        android:name="com.example.voicechanger.ui.hello.HelloTwoFragment"
+        android:label="fragment_hello_two"
+        tools:layout="@layout/fragment_hello_two" >
+        <action
+            android:id="@+id/action_helloTwoFragment2_to_helloThreeFragment2"
+            app:destination="@id/helloThreeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloThreeFragment2"
+        android:name="com.example.voicechanger.ui.hello.HelloThreeFragment"
+        android:label="fragment_hello_three"
+        tools:layout="@layout/fragment_hello_three" >
+        <action
+            android:id="@+id/action_helloThreeFragment2_to_helloFourFragment2"
+            app:destination="@id/helloFourFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFourFragment2"
+        android:name="com.example.voicechanger.ui.hello.HelloFourFragment"
+        android:label="fragment_hello_four"
+        tools:layout="@layout/fragment_hello_four" >
+        <action
+            android:id="@+id/action_helloFourFragment2_to_helloFinallFragment2"
+            app:destination="@id/helloFinallFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFinallFragment2"
+        android:name="com.example.voicechanger.ui.hello.HelloFinallFragment"
+        android:label="fragment_hello_finall"
+        tools:layout="@layout/fragment_hello_finall" />
+</navigation>

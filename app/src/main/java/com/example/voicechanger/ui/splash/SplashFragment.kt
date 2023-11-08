@@ -33,13 +33,13 @@ class SplashFragment : Fragment() {
             animator.start()
 
             withContext(Dispatchers.Default) {
-                delay(2100)
+                delay(1500)
             }
 
             animator.cancel()
             progressBar.visibility = View.GONE
 
-            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_splashFragment_to_helloFragment)
         }
         return binding.root
     }
