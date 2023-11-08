@@ -1,14 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
     tools:context=".ui.home.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvLogoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_b"
+        android:text="@string/text_logo"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_more"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLogoHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLogoHeader" />
+
+    <TextView
+        android:id="@+id/itemMic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingVertical="10dp"
+        android:text="@string/recording"
+        android:fontFamily="@font/montserrat_b"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_speak"
+        app:layout_constraintEnd_toStartOf="@+id/itemDownload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogoHeader" />
+
+    <TextView
+        android:id="@+id/itemDownload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="@string/dowloading"
+        android:fontFamily="@font/montserrat_b"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_folder"
+        app:layout_constraintBottom_toBottomOf="@+id/itemMic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/itemMic"
+        app:layout_constraintTop_toTopOf="@+id/itemMic" />
+
+
+    <TextView
+        android:id="@+id/itemText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingVertical="10dp"
+        android:text="@string/text_to_audio"
+        android:fontFamily="@font/montserrat_b"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_text"
+        app:layout_constraintEnd_toEndOf="@+id/itemMic"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemMic" />
+
+    <TextView
+        android:id="@+id/itemStudio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="@string/my_studio"
+        android:fontFamily="@font/montserrat_b"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_media"
+        app:layout_constraintBottom_toBottomOf="@+id/itemText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/itemDownload"
+        app:layout_constraintTop_toTopOf="@+id/itemText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/itemEffects"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingVertical="10dp"
+        android:text="@string/catalog_effects"
+        android:fontFamily="@font/montserrat_b"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_pulse"
+        app:layout_constraintEnd_toEndOf="@+id/itemText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemText" />
+
+    <TextView
+        android:id="@+id/itemConfig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:text="@string/settings"
+        android:fontFamily="@font/montserrat_b"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_setting"
+        app:layout_constraintBottom_toBottomOf="@+id/itemEffects"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/itemStudio"
+        app:layout_constraintTop_toTopOf="@+id/itemEffects" />
+</androidx.constraintlayout.widget.ConstraintLayout>

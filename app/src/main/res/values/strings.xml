@@ -33,4 +33,10 @@
     <string name="hello_text_btn_5">
         Подключить\n<font size="12">всего за $2.99 в месяц</font>
     </string>
+    <string name="recording">Запись аудио</string>
+    <string name="dowloading">Загрузить файл</string>
+    <string name="text_to_audio">Текст в аудио</string>
+    <string name="my_studio">Моя студия</string>
+    <string name="catalog_effects">Каталог эффектов</string>
+    <string name="settings">Настройки</string>
 </resources>
