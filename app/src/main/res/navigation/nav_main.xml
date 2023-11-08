@@ -12,10 +12,75 @@
         <action
             android:id="@+id/action_splashFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_helloFragment"
+            app:destination="@id/helloFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.voicechanger.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/helloOneFragment"
+        android:name="com.example.voicechanger.ui.hello.HelloOneFragment"
+        android:label="fragment_hello_one"
+        tools:layout="@layout/fragment_hello_one" >
+        <action
+            android:id="@+id/action_helloOneFragment_to_helloTwoFragment"
+            app:destination="@id/helloTwoFragment" />
+        <action
+            android:id="@+id/action_helloOneFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloTwoFragment"
+        android:name="com.example.voicechanger.ui.hello.HelloTwoFragment"
+        android:label="fragment_hello_two"
+        tools:layout="@layout/fragment_hello_two" >
+        <action
+            android:id="@+id/action_helloTwoFragment_to_helloThreeFragment"
+            app:destination="@id/helloThreeFragment" />
+        <action
+            android:id="@+id/action_helloTwoFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloThreeFragment"
+        android:name="com.example.voicechanger.ui.hello.HelloThreeFragment"
+        android:label="fragment_hello_three"
+        tools:layout="@layout/fragment_hello_three" >
+        <action
+            android:id="@+id/action_helloThreeFragment_to_helloFourFragment"
+            app:destination="@id/helloFourFragment" />
+        <action
+            android:id="@+id/action_helloThreeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFourFragment"
+        android:name="com.example.voicechanger.ui.hello.HelloFourFragment"
+        android:label="fragment_hello_four"
+        tools:layout="@layout/fragment_hello_four" >
+        <action
+            android:id="@+id/action_helloFourFragment_to_helloFinallFragment"
+            app:destination="@id/helloFinallFragment" />
+        <action
+            android:id="@+id/action_helloFourFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFinallFragment"
+        android:name="com.example.voicechanger.ui.hello.HelloFinallFragment"
+        android:label="fragment_hello_finall"
+        tools:layout="@layout/fragment_hello_finall" >
+        <action
+            android:id="@+id/action_helloFinallFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFragment"
+        android:name="com.example.voicechanger.ui.hello.HelloFragment"
+        android:label="fragment_hello"
+        tools:layout="@layout/fragment_hello" />
 </navigation>
