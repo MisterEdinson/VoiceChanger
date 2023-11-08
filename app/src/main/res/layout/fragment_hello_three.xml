@@ -18,7 +18,7 @@
         android:fontFamily="@font/montserrat_b"
         android:text="@string/hello_text_3"
         android:textColor="@color/green"
-        android:textSize="24sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
-        android:src="@drawable/ic_circle_white"
+        android:src="@drawable/ic_circle"
         app:layout_constraintBottom_toBottomOf="@+id/imgPage1"
         app:layout_constraintStart_toEndOf="@+id/imgPage1"
         app:layout_constraintTop_toTopOf="@+id/imgPage1" />
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
-        android:src="@drawable/ic_circle"
+        android:src="@drawable/ic_circle_white"
         app:layout_constraintBottom_toBottomOf="@+id/imgPage2"
         app:layout_constraintStart_toEndOf="@+id/imgPage2"
         app:layout_constraintTop_toTopOf="@+id/imgPage2" />
@@ -83,7 +83,8 @@
         android:src="@drawable/settings"
         app:layout_constraintBottom_toTopOf="@+id/tvHelloDesc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/btnNext"

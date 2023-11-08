@@ -27,8 +27,10 @@
         <font fgcolor="@color/white">с любым голосом</font>
     </string>
     <string name="hello_text_5">
-        <font fgcolor="@color/white">Подключи </font>
+        <font fgcolor="@color/white">Подключи\n</font>
         премиум-подписку
     </string>
-
+    <string name="hello_text_btn_5">
+        Подключить\n<font size="12">всего за $2.99 в месяц</font>
+    </string>
 </resources>

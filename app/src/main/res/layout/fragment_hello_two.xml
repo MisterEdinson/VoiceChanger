@@ -18,7 +18,7 @@
         android:fontFamily="@font/montserrat_b"
         android:text="@string/hello_text_2"
         android:textColor="@color/green"
-        android:textSize="24sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/btnNext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -83,7 +83,8 @@
         android:src="@drawable/effects"
         app:layout_constraintBottom_toTopOf="@+id/tvHelloDesc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/btnNext"
