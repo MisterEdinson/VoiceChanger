@@ -20,7 +20,26 @@
         android:id="@+id/homeFragment"
         android:name="com.example.voicechanger.ui.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_downloadFragment"
+            app:destination="@id/downloadFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_textToAudioFragment"
+            app:destination="@id/textToAudioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_studioFragment"
+            app:destination="@id/studioFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_effectsFragment"
+            app:destination="@id/effectsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/helloFragment"
         android:name="com.example.voicechanger.ui.hello.HelloFragment"
@@ -30,4 +49,34 @@
             android:id="@+id/action_helloFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.voicechanger.ui.record.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.example.voicechanger.ui.download.DownloadFragment"
+        android:label="fragment_download"
+        tools:layout="@layout/fragment_download" />
+    <fragment
+        android:id="@+id/textToAudioFragment"
+        android:name="com.example.voicechanger.ui.textToAudio.TextToAudioFragment"
+        android:label="fragment_text_to_audio"
+        tools:layout="@layout/fragment_text_to_audio" />
+    <fragment
+        android:id="@+id/studioFragment"
+        android:name="com.example.voicechanger.ui.studio.StudioFragment"
+        android:label="fragment_studio"
+        tools:layout="@layout/fragment_studio" />
+    <fragment
+        android:id="@+id/effectsFragment"
+        android:name="com.example.voicechanger.ui.effects.EffectsFragment"
+        android:label="fragment_effects"
+        tools:layout="@layout/fragment_effects" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.voicechanger.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>
