@@ -47,8 +47,8 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_folder"
             app:layout_constraintEnd_toEndOf="@+id/textView4"
