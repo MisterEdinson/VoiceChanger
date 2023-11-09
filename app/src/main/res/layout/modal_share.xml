@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_night">
+
+    <ImageView
+        android:id="@+id/btnShareClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/tvShareHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/montserrat_b"
+        android:gravity="center"
+        android:text="Поделитесь приложением"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnVk"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFb"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShareHeader"
+        app:srcCompat="@drawable/ic_social_vk" />
+
+    <ImageView
+        android:id="@+id/btnFb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnVk"
+        app:layout_constraintEnd_toStartOf="@+id/btnTm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnVk"
+        app:layout_constraintTop_toTopOf="@+id/btnVk"
+        app:srcCompat="@drawable/ic_social_fb" />
+
+    <ImageView
+        android:id="@+id/btnTm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFb"
+        app:layout_constraintEnd_toStartOf="@+id/btnWu"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnFb"
+        app:layout_constraintTop_toTopOf="@+id/btnFb"
+        app:srcCompat="@drawable/ic_social_tm" />
+
+    <ImageView
+        android:id="@+id/btnWu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTm"
+        app:layout_constraintEnd_toStartOf="@+id/btnVb"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTm"
+        app:layout_constraintTop_toTopOf="@+id/btnTm"
+        app:srcCompat="@drawable/ic_social_wu" />
+
+    <ImageView
+        android:id="@+id/btnVb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnWu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnWu"
+        app:layout_constraintTop_toTopOf="@+id/btnWu"
+        app:srcCompat="@drawable/ic_social_vb" />
+</androidx.constraintlayout.widget.ConstraintLayout>
