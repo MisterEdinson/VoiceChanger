@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="24dp"
+    android:paddingHorizontal="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cardDefault"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_xml"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="Без эфектов"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_default"
+        app:layout_constraintEnd_toStartOf="@+id/cardMan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardMan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Мужской"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_man"
+        app:layout_constraintBottom_toBottomOf="@+id/cardDefault"
+        app:layout_constraintEnd_toStartOf="@+id/cardWoman"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardDefault"
+        app:layout_constraintTop_toTopOf="@+id/cardDefault" />
+
+    <TextView
+        android:id="@+id/cardWoman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_xml"
+        android:padding="8dp"
+        android:text="Женский"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_woman"
+        app:layout_constraintBottom_toBottomOf="@+id/cardMan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardMan"
+        app:layout_constraintTop_toTopOf="@+id/cardMan" />
+
+    <TextView
+        android:id="@+id/cardFast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_card_xml"
+        android:padding="8dp"
+        android:text="Быстро"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_fast"
+        app:layout_constraintEnd_toStartOf="@+id/cardSlowly"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardDefault" />
+
+    <TextView
+        android:id="@+id/cardSlowly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_card_xml"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Медленно"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_slowly"
+        app:layout_constraintBottom_toBottomOf="@+id/cardFast"
+        app:layout_constraintEnd_toStartOf="@+id/cardChild"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardFast"
+        app:layout_constraintTop_toTopOf="@+id/cardFast" />
+
+    <TextView
+        android:id="@+id/cardChild"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_xml"
+        android:padding="8dp"
+        android:text="Ребенок"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:drawableTopCompat="@drawable/ic_child"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSlowly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardSlowly"
+        app:layout_constraintTop_toTopOf="@+id/cardSlowly" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

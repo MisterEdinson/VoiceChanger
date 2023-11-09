@@ -2,8 +2,8 @@
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="144dp"
     android:height="144dp"
-    android:viewportWidth="144"
-    android:viewportHeight="144">
+    android:viewportWidth="136"
+    android:viewportHeight="136">
   <path
       android:pathData="M68,8L68,8A60,60 0,0 1,128 68L128,68A60,60 0,0 1,68 128L68,128A60,60 0,0 1,8 68L8,68A60,60 0,0 1,68 8z">
     <aapt:attr name="android:fillColor">
