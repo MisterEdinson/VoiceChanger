@@ -7,24 +7,24 @@
     </string>
 
     <string name="hello_text_1">
-        <font fgcolor="@color/white">Записывай аудио в </font>
+        <font fgcolor="@color/white">Записывай аудио\nв</font>
         превосходном
         <font fgcolor="@color/white">качестве!</font>
     </string>
     <string name="hello_text_2">
-        <font fgcolor="@color/white">Накладывай </font>
+        <font fgcolor="@color/white">Накладывай</font>\n
         эффекты
         <font fgcolor="@color/white">на запись</font>
     </string>
     <string name="hello_text_3">
         <font fgcolor="@color/white">Задавай </font>
-        настройки
+        настройки\n
         <font fgcolor="@color/white">голоса</font>
     </string>
     <string name="hello_text_4">
         <font fgcolor="@color/white">Преобразуй </font>
-        текст в аудио
-        <font fgcolor="@color/white">с любым голосом</font>
+        текст\n в аудио
+        <font fgcolor="@color/white">с любым\n голосом</font>
     </string>
     <string name="hello_text_5">
         <font fgcolor="@color/white">Подключи\n</font>

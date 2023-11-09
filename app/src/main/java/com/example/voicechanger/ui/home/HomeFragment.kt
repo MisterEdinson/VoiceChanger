@@ -12,6 +12,7 @@ import com.example.voicechanger.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
     private lateinit var binding: FragmentHomeBinding
+    private var moreVis: Boolean = false
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +31,16 @@ class HomeFragment : Fragment() {
             itemStudio.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_studioFragment) }
             itemEffects.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_effectsFragment) }
             itemConfig.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_settingsFragment) }
+
+            btnMore.setOnClickListener {
+                if(!moreVis){
+                    modalMore.lyMore.visibility = View.VISIBLE
+                    moreVis = true
+                }else{
+                    modalMore.lyMore.visibility = View.GONE
+                    moreVis = false
+                }
+            }
         }
     }
 }
