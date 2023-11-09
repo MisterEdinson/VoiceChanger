@@ -145,4 +145,22 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/itemStudio"
         app:layout_constraintTop_toTopOf="@+id/itemEffects" />
+
+    <TextView
+        android:id="@+id/btnMarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_green"
+        android:text="Оценить приложение"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_b"
+        android:gravity="center"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
