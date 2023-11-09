@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bg">
+
+    <ImageView
+        android:id="@+id/bntPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imgWave"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_play" />
+
+    <ImageView
+        android:id="@+id/imgWave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/bntPlay"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeWave"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bntPlay"
+        app:layout_constraintTop_toTopOf="@+id/bntPlay"
+        app:srcCompat="@drawable/ic_waves" />
+
+    <TextView
+        android:id="@+id/tvTimeWave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:22"
+        android:fontFamily="@font/montserrat_r"
+        android:textColor="#66FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgWave"
+        app:layout_constraintEnd_toStartOf="@+id/btnEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgWave"
+        app:layout_constraintTop_toTopOf="@+id/imgWave" />
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTimeWave"
+        app:layout_constraintEnd_toStartOf="@+id/btnDownload"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvTimeWave"
+        app:layout_constraintTop_toTopOf="@+id/tvTimeWave"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/btnDownload"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEdit"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintTop_toTopOf="@+id/btnEdit"
+        app:srcCompat="@drawable/ic_download" />
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDownload"
+        app:layout_constraintTop_toTopOf="@+id/btnDownload"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/tvDateWave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_r"
+        android:text="Запись от 31.10.2023"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/bntPlay"
+        app:layout_constraintTop_toBottomOf="@+id/bntPlay" />
+
+    <View
+        android:id="@+id/vWaveBoard"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_view_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateWave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
