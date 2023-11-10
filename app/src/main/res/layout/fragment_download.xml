@@ -34,7 +34,7 @@
             app:layout_constraintTop_toTopOf="@+id/tvLogoHeader" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/etTextToAudio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -51,9 +51,9 @@
             android:layout_height="160dp"
             android:layout_marginTop="16dp"
             android:src="@drawable/ic_folder"
-            app:layout_constraintEnd_toEndOf="@+id/textView4"
-            app:layout_constraintStart_toStartOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintEnd_toEndOf="@+id/etTextToAudio"
+            app:layout_constraintStart_toStartOf="@+id/etTextToAudio"
+            app:layout_constraintTop_toBottomOf="@+id/etTextToAudio" />
 
         <View
             android:id="@+id/view4"

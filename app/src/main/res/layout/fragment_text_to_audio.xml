@@ -34,14 +34,14 @@ android:layout_height="match_parent">
         app:layout_constraintTop_toTopOf="@+id/tvLogoHeader" />
 
     <EditText
-        android:id="@+id/textView4"
+        android:id="@+id/etTextToAudio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/montserrat_r"
-        android:text="Начать запись"
+        android:text="Введите текст для преобразования"
         android:textSize="14sp"
         android:minHeight="100dp"
         android:padding="16sp"
@@ -63,9 +63,9 @@ android:layout_height="match_parent">
         android:textColor="@color/white"
         android:gravity="center"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView4"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintEnd_toEndOf="@+id/etTextToAudio"
+        app:layout_constraintStart_toStartOf="@+id/etTextToAudio"
+        app:layout_constraintTop_toBottomOf="@+id/etTextToAudio" />
 
     <View
         android:id="@+id/view4"
