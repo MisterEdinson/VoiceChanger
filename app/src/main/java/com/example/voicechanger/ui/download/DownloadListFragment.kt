@@ -5,29 +5,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.example.voicechanger.R
-import com.example.voicechanger.databinding.FragmentDownloadBinding
+import com.example.voicechanger.databinding.FragmentDownloadListBinding
 
-class DownloadFragment : Fragment() {
+class DownloadListFragment : Fragment() {
 
-    private lateinit var binding: FragmentDownloadBinding
-
+    private lateinit var binding:FragmentDownloadListBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentDownloadBinding.inflate(layoutInflater)
+        binding = FragmentDownloadListBinding.inflate(layoutInflater)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            btnBack.setOnClickListener { findNavController().popBackStack() }
-            imgDownloadFile.setOnClickListener {
-                findNavController().navigate(R.id.action_downloadFragment_to_downloadListFragment)
-            }
+
         }
     }
 }

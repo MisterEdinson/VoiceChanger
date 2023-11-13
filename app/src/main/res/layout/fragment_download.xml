@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Начать запись"
+            android:text="Выберите файл"
             android:textColor="@color/white"
             android:fontFamily="@font/montserrat_r"
             app:layout_constraintEnd_toEndOf="@+id/tvLogoHeader"
@@ -46,7 +46,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvLogoHeader" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imgDownloadFile"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_marginTop="16dp"
@@ -65,7 +65,7 @@
             android:background="@drawable/bg_view_row"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            app:layout_constraintTop_toBottomOf="@+id/imgDownloadFile" />
 
         <TextView
             android:id="@+id/textView5"
