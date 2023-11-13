@@ -39,7 +39,8 @@ class SplashFragment : Fragment() {
             animator.cancel()
             progressBar.visibility = View.GONE
 
-            findNavController().navigate(R.id.action_splashFragment_to_helloFragment)
+//            findNavController().navigate(R.id.action_splashFragment_to_helloFragment)
+            findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
         }
         return binding.root
     }
