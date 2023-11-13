@@ -13,7 +13,7 @@
         <TextView
             android:id="@+id/tvLogoHeader"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/montserrat_b"
             android:text="@string/text_logo"
@@ -34,7 +34,7 @@
             app:layout_constraintTop_toTopOf="@+id/tvLogoHeader" />
 
         <TextView
-            android:id="@+id/etTextToAudio"
+            android:id="@+id/tvRecord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -46,26 +46,39 @@
             app:layout_constraintTop_toBottomOf="@+id/tvLogoHeader" />
 
         <ImageView
-            android:id="@+id/imgDownloadFile"
+            android:id="@+id/btnRecord"
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_marginTop="16dp"
             android:src="@drawable/btn_circle_white"
-            app:layout_constraintEnd_toEndOf="@+id/etTextToAudio"
-            app:layout_constraintStart_toStartOf="@+id/etTextToAudio"
-            app:layout_constraintTop_toBottomOf="@+id/etTextToAudio" />
+            app:layout_constraintEnd_toEndOf="@+id/tvRecord"
+            app:layout_constraintStart_toStartOf="@+id/tvRecord"
+            app:layout_constraintTop_toBottomOf="@+id/tvRecord" />
+
+        <include
+            android:id="@+id/incFileItem"
+            layout="@layout/item_studio_wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnRecord" />
 
         <View
             android:id="@+id/view4"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/bg_view_row"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgDownloadFile" />
+            app:layout_constraintTop_toBottomOf="@+id/incFileItem" />
 
         <TextView
             android:id="@+id/textView5"

@@ -30,22 +30,10 @@ class DownloadListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         initAdapter()
         binding.apply {
-            if (
-                ContextCompat.checkSelfPermission(
-                    requireContext(),
-                    Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED
-            ) {
-                ActivityCompat.requestPermissions(
-                    requireActivity(),
-                    arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
-                    200
-                )
-            } else {
-                val searchFile = MusicSearch.getMusicFiles(requireContext())
-                Toast.makeText(context, searchFile.size.toString(), Toast.LENGTH_SHORT).show()
-                adapter?.list?.submitList(searchFile)
-            }
+            manifestReadExternalStorage()
+            val searchFile = MusicSearch.getMusicFiles(requireContext())
+            Toast.makeText(context, searchFile.size.toString(), Toast.LENGTH_SHORT).show()
+            adapter?.list?.submitList(searchFile)
         }
     }
 
@@ -53,5 +41,19 @@ class DownloadListFragment : Fragment() {
         adapter = ListDownloadAdapter()
         binding.rvDownloadList.adapter = adapter
         binding.rvDownloadList.itemAnimator = DefaultItemAnimator()
+    }
+
+    private fun manifestReadExternalStorage() {
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.READ_EXTERNAL_STORAGE
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
+                200
+            )
+        }
     }
 }

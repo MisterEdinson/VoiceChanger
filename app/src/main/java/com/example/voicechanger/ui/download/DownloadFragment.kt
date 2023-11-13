@@ -25,7 +25,7 @@ class DownloadFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             btnBack.setOnClickListener { findNavController().popBackStack() }
-            imgDownloadFile.setOnClickListener {
+            btnDownload.setOnClickListener {
                 findNavController().navigate(R.id.action_downloadFragment_to_downloadListFragment)
             }
         }

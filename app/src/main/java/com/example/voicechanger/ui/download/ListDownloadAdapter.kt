@@ -3,6 +3,7 @@ package com.example.voicechanger.ui.download
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -36,5 +37,12 @@ class ListDownloadAdapter:RecyclerView.Adapter<ListDownloadAdapter.DownloadHolde
     override fun onBindViewHolder(holder: DownloadHolder, position: Int) {
         val item = list.currentList[position]
         val binding = ItemStudioWaveBinding.bind(holder.itemView)
+        binding.apply {
+            tvDateWave.text = item.name
+            tvTimeWave.text = item.duration
+            binding.lyItemMusic.setOnClickListener {
+                Toast.makeText(binding.root.context, item.title, Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
