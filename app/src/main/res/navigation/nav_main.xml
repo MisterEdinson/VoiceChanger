@@ -64,7 +64,11 @@
         android:id="@+id/downloadFragment"
         android:name="com.example.voicechanger.ui.download.DownloadFragment"
         android:label="fragment_download"
-        tools:layout="@layout/fragment_download" />
+        tools:layout="@layout/fragment_download" >
+        <action
+            android:id="@+id/action_downloadFragment_to_downloadListFragment"
+            app:destination="@id/downloadListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/textToAudioFragment"
         android:name="com.example.voicechanger.ui.textToAudio.TextToAudioFragment"
@@ -85,4 +89,9 @@
         android:name="com.example.voicechanger.ui.settings.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/downloadListFragment"
+        android:name="com.example.voicechanger.ui.download.DownloadListFragment"
+        android:label="fragment_download_list"
+        tools:layout="@layout/fragment_download_list" />
 </navigation>
