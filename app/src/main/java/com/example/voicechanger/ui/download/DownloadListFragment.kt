@@ -9,8 +9,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
+import com.example.voicechanger.R
 import com.example.voicechanger.data.utils.MusicSearch
 import com.example.voicechanger.databinding.FragmentDownloadListBinding
 
@@ -38,9 +41,15 @@ class DownloadListFragment : Fragment() {
     }
 
     private fun initAdapter() {
-        adapter = ListDownloadAdapter()
+        adapter = ListDownloadAdapter{select -> selectSong(select)}
         binding.rvDownloadList.adapter = adapter
         binding.rvDownloadList.itemAnimator = DefaultItemAnimator()
+    }
+
+    private fun selectSong(select: String?) {
+        val bund:Bundle = bundleOf()
+        bund.putString("file", select)
+        findNavController().navigate(R.id.action_downloadListFragment_to_playFragment, bund)
     }
 
     private fun manifestReadExternalStorage() {

@@ -65,4 +65,8 @@ class MainActivity : AppCompatActivity(), b_e_class.a {
     override fun eventCompleted(strArr: Array<out String>?) {
 
     }
+
+    override fun initMain() {
+
+    }
 }
