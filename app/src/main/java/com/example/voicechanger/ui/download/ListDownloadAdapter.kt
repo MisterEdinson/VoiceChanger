@@ -11,7 +11,7 @@ import com.example.voicechanger.R
 import com.example.voicechanger.data.utils.models.MusicModel
 import com.example.voicechanger.databinding.ItemStudioWaveBinding
 
-class ListDownloadAdapter:RecyclerView.Adapter<ListDownloadAdapter.DownloadHolder>() {
+class ListDownloadAdapter (val selectSong: (data:String?) -> Unit):RecyclerView.Adapter<ListDownloadAdapter.DownloadHolder>() {
     class DownloadHolder(view: View): RecyclerView.ViewHolder(view)
 
     private val callback = object : DiffUtil.ItemCallback<MusicModel>(){
@@ -41,7 +41,8 @@ class ListDownloadAdapter:RecyclerView.Adapter<ListDownloadAdapter.DownloadHolde
             tvDateWave.text = item.name
             tvTimeWave.text = item.duration
             binding.lyItemMusic.setOnClickListener {
-                Toast.makeText(binding.root.context, item.title, Toast.LENGTH_SHORT).show()
+                if(!item.data.isNullOrEmpty()) selectSong(item.data)
+                Toast.makeText(binding.root.context, item.data, Toast.LENGTH_SHORT).show()
             }
         }
     }

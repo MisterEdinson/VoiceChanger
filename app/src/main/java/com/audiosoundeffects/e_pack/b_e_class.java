@@ -9,5 +9,7 @@ public class b_e_class {
 
     public interface a {
         void eventCompleted(String[] strArr);
+
+        void initMain();
     }
 }

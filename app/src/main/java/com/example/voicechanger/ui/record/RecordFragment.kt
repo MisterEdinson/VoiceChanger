@@ -9,8 +9,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.voicechanger.R
@@ -57,10 +59,11 @@ class RecordFragment : Fragment() {
                     }
                 } else {
                     stopRecording()
-                    tvRecord.visibility = View.GONE
-                    btnRecord.visibility = View.GONE
-                    incFileItem.lyItemMusic.visibility = View.VISIBLE
                     record = false
+                    Toast.makeText(context, getOutputFilePath() , Toast.LENGTH_SHORT).show()
+                    val bundle: Bundle = bundleOf()
+                    bundle.putString("file", getOutputFilePath())
+                    findNavController().navigate(R.id.action_recordFragment_to_playFragment, bundle)
                 }
             }
         }
@@ -78,14 +81,14 @@ class RecordFragment : Fragment() {
                 val simpleDateFormat = SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault())
                 val time = Calendar.getInstance().time
                 val fileName = "Record_${simpleDateFormat.format(time)}.ogg"
-                val output = File(recordingsDir, fileName).absolutePath
+                outputFile = File(recordingsDir, fileName).absolutePath
 
                 mediaRecorder = MediaRecorder().apply {
                     reset()
                     setAudioSource(MediaRecorder.AudioSource.MIC)
                     setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
                     setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
-                    setOutputFile(output)
+                    setOutputFile(outputFile)
                     prepare()
                     start()
                 }
