@@ -49,7 +49,7 @@ class DownloadListFragment : Fragment() {
     private fun selectSong(select: String?) {
         val bund:Bundle = bundleOf()
         bund.putString("file", select)
-        findNavController().navigate(R.id.action_downloadListFragment_to_playFragment, bund)
+        findNavController().navigate(R.id.action_downloadListFragment_to_playActivity, bund)
     }
 
     private fun manifestReadExternalStorage() {

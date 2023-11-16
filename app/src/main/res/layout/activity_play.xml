@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_bg"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.play.PlayFragment">
+    tools:context=".ui.play.PlayActivity">
 
     <ImageView
         android:id="@+id/btnBack"
@@ -76,29 +76,37 @@
         app:layout_constraintStart_toStartOf="@+id/tvTitleMusic"
         app:layout_constraintTop_toBottomOf="@+id/tvTimeSong" />
 
-    <ImageView
-        android:id="@+id/imgLogoMusic"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/ic_waves"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
         app:layout_constraintEnd_toStartOf="@+id/tvDuration"
         app:layout_constraintStart_toEndOf="@+id/btnPlay"
-        app:layout_constraintTop_toTopOf="@+id/btnPlay" />
+        app:layout_constraintTop_toTopOf="@+id/btnPlay">
+
+        <SeekBar
+            android:id="@+id/seekMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:progress="00"
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@null" />
+    </ScrollView>
 
     <TextView
         android:id="@+id/tvDuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        android:text="01:22"
         android:fontFamily="@font/montserrat_r"
+        android:text="01:22"
         android:textColor="@color/silver"
-        app:layout_constraintBottom_toBottomOf="@+id/imgLogoMusic"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgLogoMusic" />
+        app:layout_constraintTop_toTopOf="@+id/btnPlay" />
 
     <ImageView
         android:id="@+id/imageView9"
