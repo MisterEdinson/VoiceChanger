@@ -61,8 +61,8 @@
         android:label="fragment_record"
         tools:layout="@layout/fragment_record" >
         <action
-            android:id="@+id/action_recordFragment_to_playFragment"
-            app:destination="@id/playFragment" />
+            android:id="@+id/action_recordFragment_to_playActivity"
+            app:destination="@id/playActivity" />
     </fragment>
     <fragment
         android:id="@+id/downloadFragment"
@@ -99,12 +99,12 @@
         android:label="fragment_download_list"
         tools:layout="@layout/fragment_download_list" >
         <action
-            android:id="@+id/action_downloadListFragment_to_playFragment"
-            app:destination="@id/playFragment" />
+            android:id="@+id/action_downloadListFragment_to_playActivity"
+            app:destination="@id/playActivity" />
     </fragment>
-    <fragment
-        android:id="@+id/playFragment"
-        android:name="com.example.voicechanger.ui.play.PlayFragment"
+    <activity
+        android:id="@+id/playActivity"
+        android:name="com.example.voicechanger.ui.play.PlayActivity"
         android:label="fragment_play"
-        tools:layout="@layout/fragment_play" />
+        tools:layout="@layout/activity_play" />
 </navigation>

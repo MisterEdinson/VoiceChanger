@@ -63,7 +63,7 @@ class RecordFragment : Fragment() {
                     Toast.makeText(context, getOutputFilePath() , Toast.LENGTH_SHORT).show()
                     val bundle: Bundle = bundleOf()
                     bundle.putString("file", getOutputFilePath())
-                    findNavController().navigate(R.id.action_recordFragment_to_playFragment, bundle)
+                    findNavController().navigate(R.id.action_recordFragment_to_playActivity, bundle)
                 }
             }
         }

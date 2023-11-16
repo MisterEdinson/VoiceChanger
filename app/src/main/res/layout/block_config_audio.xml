@@ -8,26 +8,26 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tvFrequency"
+        android:id="@+id/tvVolume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Частота"
+        android:text="Volume"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
-        android:id="@+id/sbFrequency"
+        android:id="@+id/sbVolume"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:progress="10"
         android:progressBackgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFrequency" />
+        app:layout_constraintTop_toBottomOf="@+id/tvVolume" />
 
     <View
         android:id="@+id/view5"
@@ -39,10 +39,10 @@
         android:background="@drawable/bg_view_row"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMinFrequency" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMinVolume" />
 
     <TextView
-        android:id="@+id/tvMinFrequency"
+        android:id="@+id/tvMinVolume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -50,11 +50,11 @@
         android:text="-10"
         android:textColor="#B3FFFFFF"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/sbFrequency"
-        app:layout_constraintTop_toBottomOf="@+id/sbFrequency" />
+        app:layout_constraintStart_toStartOf="@+id/sbVolume"
+        app:layout_constraintTop_toBottomOf="@+id/sbVolume" />
 
     <TextView
-        android:id="@+id/tvMaxFrequency"
+        android:id="@+id/tvMaxVolume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -63,42 +63,42 @@
         android:textColor="#B3FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sbFrequency" />
+        app:layout_constraintTop_toBottomOf="@+id/sbVolume" />
 
     <TextView
-        android:id="@+id/tvHeight"
+        android:id="@+id/tvPitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Высота"
+        android:text="Pitch"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/tvFrequency"
+        app:layout_constraintStart_toStartOf="@+id/tvVolume"
         app:layout_constraintTop_toBottomOf="@+id/view5" />
 
     <SeekBar
-        android:id="@+id/sbHeader"
+        android:id="@+id/sbPitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:progress="10"
         android:progressBackgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPitch" />
 
     <TextView
-        android:id="@+id/tvMinHeight"
+        android:id="@+id/tvMinPitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="-10"
         android:textColor="#B3FFFFFF"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/tvMinFrequency"
-        app:layout_constraintTop_toBottomOf="@+id/sbHeader" />
+        app:layout_constraintStart_toStartOf="@+id/tvMinVolume"
+        app:layout_constraintTop_toBottomOf="@+id/sbPitch" />
 
     <TextView
-        android:id="@+id/tvMaxHeight"
+        android:id="@+id/tvMaxPitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -106,8 +106,8 @@
         android:text="10"
         android:textColor="#B3FFFFFF"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/sbHeader"
-        app:layout_constraintTop_toBottomOf="@+id/sbHeader" />
+        app:layout_constraintEnd_toEndOf="@+id/sbPitch"
+        app:layout_constraintTop_toBottomOf="@+id/sbPitch" />
 
     <View
         android:id="@+id/view6"
@@ -119,42 +119,42 @@
         android:background="@drawable/bg_view_row"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMinHeight" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMinPitch" />
 
     <TextView
-        android:id="@+id/tvSpeed"
+        android:id="@+id/tvTempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Скорость"
+        android:text="Tempo"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="@+id/tvHeight"
+        app:layout_constraintStart_toStartOf="@+id/tvPitch"
         app:layout_constraintTop_toBottomOf="@+id/view6" />
 
     <SeekBar
-        android:id="@+id/sbSpeed"
+        android:id="@+id/sbTempo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:progress="10"
         android:progressBackgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/sbHeader"
+        app:layout_constraintEnd_toEndOf="@+id/sbPitch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSpeed" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTempo" />
 
     <TextView
-        android:id="@+id/tvMinSpeed"
+        android:id="@+id/tvMinTempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="-10"
         android:textColor="#B3FFFFFF"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/tvMinHeight"
-        app:layout_constraintTop_toBottomOf="@+id/sbSpeed" />
+        app:layout_constraintStart_toStartOf="@+id/tvMinPitch"
+        app:layout_constraintTop_toBottomOf="@+id/sbTempo" />
 
     <TextView
-        android:id="@+id/tvMaxSpeed"
+        android:id="@+id/tvMaxTempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -162,19 +162,243 @@
         android:text="10"
         android:textColor="#B3FFFFFF"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/sbSpeed"
-        app:layout_constraintTop_toBottomOf="@+id/sbSpeed" />
+        app:layout_constraintEnd_toEndOf="@+id/sbTempo"
+        app:layout_constraintTop_toBottomOf="@+id/sbTempo" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_view_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinTempo" />
+
+    <TextView
+        android:id="@+id/tvReverb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Reverb"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvPitch"
+        app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+    <SeekBar
+        android:id="@+id/sbReverb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progress="10"
+        android:progressBackgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sbPitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvReverb" />
+
+    <TextView
+        android:id="@+id/tvMinReverb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tvMinPitch"
+        app:layout_constraintTop_toBottomOf="@+id/sbReverb" />
+
+    <TextView
+        android:id="@+id/tvMaxReverb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/sbReverb"
+        app:layout_constraintTop_toBottomOf="@+id/sbReverb" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_view_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinReverb" />
+
+    <TextView
+        android:id="@+id/tvBass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Bass"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvPitch"
+        app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+    <SeekBar
+        android:id="@+id/sbBass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progress="10"
+        android:progressBackgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sbPitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBass" />
+
+    <TextView
+        android:id="@+id/tvMinBass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tvMinPitch"
+        app:layout_constraintTop_toBottomOf="@+id/sbBass" />
+
+    <TextView
+        android:id="@+id/tvMaxBass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/sbBass"
+        app:layout_constraintTop_toBottomOf="@+id/sbBass" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_view_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinBass" />
+
+    <TextView
+        android:id="@+id/tvMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mid"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvPitch"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <SeekBar
+        android:id="@+id/sbMid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progress="10"
+        android:progressBackgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sbPitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMid" />
+
+    <TextView
+        android:id="@+id/tvMinMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tvMinPitch"
+        app:layout_constraintTop_toBottomOf="@+id/sbMid" />
+
+    <TextView
+        android:id="@+id/tvMaxMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/sbMid"
+        app:layout_constraintTop_toBottomOf="@+id/sbMid" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_view_row"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinMid" />
+
+    <TextView
+        android:id="@+id/tvTreable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Treable"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tvPitch"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <SeekBar
+        android:id="@+id/sbTreable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:progress="10"
+        android:progressBackgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sbPitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTreable" />
+
+    <TextView
+        android:id="@+id/tvMinTreable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/tvMinPitch"
+        app:layout_constraintTop_toBottomOf="@+id/sbTreable" />
+
+    <TextView
+        android:id="@+id/tvMaxTreable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        android:textColor="#B3FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/sbTreable"
+        app:layout_constraintTop_toBottomOf="@+id/sbTreable" />
 
     <TextView
         android:id="@+id/tvResetParam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
         android:text="Сбросить параметры"
         android:textColor="#B3FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvSpeed"
-        app:layout_constraintTop_toBottomOf="@+id/tvMinSpeed" />
+        app:layout_constraintStart_toStartOf="@+id/tvTempo"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinTreable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
